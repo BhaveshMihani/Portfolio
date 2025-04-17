@@ -6,6 +6,10 @@ import css from "/css.jpg";
 import react from "/reactjs.png";
 import mongoDB from "/mongodb.jpg";
 import express from "/express.png";
+import aws from "/AWS.png";
+import jquery from "/jQuery.png";
+import tailwind from "/Tailwind.png";
+import github from "/github.jpeg";
 
 const Experiance = () => {
   const cardItems = [
@@ -35,9 +39,29 @@ const Experiance = () => {
       name: "Express JS",
     },
     {
-      id: 6,
+      id: 7,
       logo: mongoDB,
       name: "Mongo DB",
+    },
+    {
+      id: 8,
+      logo: aws,
+      name: "AWS",
+    },
+    {
+      id: 9,
+      logo: jquery,
+      name: "jQuery",
+    },
+    {
+      id: 10,
+      logo: tailwind,
+      name: "Tailwind",
+    },
+    {
+      id: 12,
+      logo: github,
+      name: "GitHub",
     },
   ];
   return (
