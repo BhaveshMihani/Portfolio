@@ -47,14 +47,6 @@ const About = () => {
             </ul>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-green-600 font-semibold text-xl mb-3">Achievements & Awards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-[17px]">
-              <li>Designed and deployed a two-tier web application on AWS using best practices</li>
-              <li>Developed and deployed an innovative audio streaming and real-time chatting platform</li>
-            </ul>
-          </section>
-
           <section>
             <h2 className="text-green-600 font-semibold text-xl mb-3">Mission Statement</h2>
             <p className="text-justify">
