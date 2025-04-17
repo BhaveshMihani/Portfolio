@@ -10,7 +10,7 @@ import { FaReact } from "react-icons/fa6";
 import { FaNodeJs } from "react-icons/fa6";
 
 import {ReactTyped} from "react-typed";
-import pic from '/photo.avif'
+import pic from '/undraw.svg'
 
 const Home = () => {
   return (
