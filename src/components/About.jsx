@@ -36,6 +36,16 @@ const About = () => {
             <h2 className="text-green-600 font-semibold text-xl mb-3">Professional Experience</h2>
             <ul className="list-disc pl-5 space-y-2 text-[17px]">
               <li>
+                <strong>Technical Support Executive, Suvit Fintech</strong>
+                <div className="text-gray-700 text-[15px]">Full-time | May 2025 - Jul 2025 (3 months)</div>
+                <div className="text-gray-700 text-[15px]">Surat, Gujarat, India · On-site</div>
+                <ul className="list-disc pl-5 mt-2 space-y-2 text-[17px]">
+                  <li>Communication</li>
+                  <li>Technical Support</li>
+                  <li>Problem Solving</li>
+                </ul>
+              </li>
+              <li>
                 <strong>Back Office Executive, Unique World Placement</strong> 
                 <ul className="list-disc pl-5 mt-2 space-y-2 text-[17px]">
                   <li>Generating leads via Message Shooting, coordinating with clients, handling HR requirements, and managing back office</li>

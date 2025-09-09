@@ -84,7 +84,9 @@ const Home = () => {
             </div>
           </div>
           <div className="md:w-1/2 flex justify-end items-center order-1 md:order-2">
-            <img src={pic} alt="" className="rounded-full md:w-[530px] md:h-[540px] object-cover"/>
+            <div className="relative flex justify-center items-center group">
+              <img src="src/assets/WhatsApp Image 2024-04-12 at 22.26.45_567438dc.jpg" alt="" className="rounded-full w-[270px] h-[270px] md:w-[420px] md:h-[400px] object-cover transition-transform duration-500 ease-out group-hover:scale-105 m-5"/>
+            </div>
           </div>
         </div>
       </div>
