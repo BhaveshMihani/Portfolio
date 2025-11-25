@@ -10,7 +10,7 @@ import { FaReact } from "react-icons/fa6";
 import { FaNodeJs } from "react-icons/fa6";
 
 import {ReactTyped} from "react-typed";
-import pic from '/unnamed.jpg'
+import pic from '/unnamed (1).jpg'
 
 const Home = () => {
   return (
@@ -85,7 +85,7 @@ const Home = () => {
           </div>
           <div className="md:w-1/2 flex justify-end items-center order-1 md:order-2">
             <div className="relative flex justify-center items-center group">
-              <img src={pic} alt="" className="rounded-full w-[270px] h-[270px] md:w-[420px] md:h-[400px] object-cover transition-transform duration-500 ease-out group-hover:scale-105 m-5"/>
+              <img src={pic} alt="" className="rounded-full w-[270px] h-[270px] md:w-[420px] md:h-[400px] object-cover transition-transform duration-500 ease-out group-hover:scale-105 m-5" style={{objectPosition: '50% 30%'}}/>
             </div>
           </div>
         </div>
