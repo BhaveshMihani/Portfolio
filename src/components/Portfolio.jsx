@@ -1,11 +1,23 @@
 import React from "react";
 import CHATTERTUNES from "/headphone1.png";
+import Pycord from "/icons8-google-chat.svg";
 const Portfolio = () => {
   const cardItems = [
     {
       id: 2,
       logo: CHATTERTUNES,
       name: "CHATTERTUNES",
+      website: "https://chattertunes.onrender.com",
+      github: "https://github.com/BhaveshMihani/CHATTERTUNES",
+      desc: `CHATTERTUNES a MERN Stack based Audio streaming platform with Real time Chatting Features.`
+    },
+    {
+      id: 1,
+      logo: Pycord,
+      name: "Pycord",
+      website: "https://pycord-zob7.onrender.com/",
+      github: "https://github.com/BhaveshMihani07/Pycord",
+      desc: `Pycord is a real-time chat application that lets users create private chatrooms and communicate.`
     },
   ];
   return (
@@ -17,7 +29,7 @@ const Portfolio = () => {
         <h1 className="text-3xl font-bold mb-5">Portfolio</h1>
         <span className="underline font-semibold">Featured Projects</span>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-5">
-          {cardItems.map(({ id, logo, name }) => (
+          {cardItems.map(({ id, logo, name, website, github,desc}) => (
             <div
               key={id}
               className="md:w-[350px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300"
@@ -29,18 +41,18 @@ const Portfolio = () => {
               />
               <div>
                 <div className="px-2 font-bold text-xl mb-2">{name}</div>
-                <p className="px-2 text-gray-700">
-                  CHATTERTUNES a MERN Stack based Audio streaming platform with Real time Chatting Features.
+                <p className="px-2 text-gray-700 dark:text-gray-400">
+                  {desc}
                 </p>
               </div>
               <div className="px-6 py-4 space-x-3 justify-around">
-                <a href="https://chattertunes.onrender.com" target="_blank">
+                <a href={website} target="_blank">
                   <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
                     Website
                   </button>
                 </a>
 
-                <a href="https://github.com/BhaveshMihani/CHATTERTUNES" target="_blank">
+                <a href={github} target="_blank">
                   <button className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
                     Sourse Code
                   </button>
