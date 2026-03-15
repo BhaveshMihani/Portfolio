@@ -1,8 +1,17 @@
 import React from "react";
+import SyntaxLab from "/SyntaxLab.png";
 import CHATTERTUNES from "/headphone1.png";
 import Pycord from "/icons8-google-chat.svg";
 const Portfolio = () => {
   const cardItems = [
+    {
+      id: 3,
+      logo: SyntaxLab,
+      name: "SyntaxLab",
+      website: "https://syntaxlab-5sfs.onrender.com/",
+      github: "https://github.com/BhaveshMihani/SyntaxLab",
+      desc: `SyntaxLab is a full-stack platform for testing and optimizing prompts across multiple LLMs using automated scoring, AI insights, and similarity analysis`
+    },
     {
       id: 2,
       logo: CHATTERTUNES,
@@ -29,7 +38,7 @@ const Portfolio = () => {
         <h1 className="text-3xl font-bold mb-5">Portfolio</h1>
         <span className="underline font-semibold">Featured Projects</span>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-5">
-          {cardItems.map(({ id, logo, name, website, github,desc}) => (
+          {cardItems.map(({ id, logo, name, website, github, desc }) => (
             <div
               key={id}
               className="md:w-[350px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300"
