@@ -1,5 +1,5 @@
 import React from "react";
-import SyntaxLab from "/SyntaxLab.png";
+import SyntaxLab from "/syntaxlab.svg";
 import CHATTERTUNES from "/headphone1.png";
 import Pycord from "/icons8-google-chat.svg";
 const Portfolio = () => {
@@ -46,7 +46,7 @@ const Portfolio = () => {
               <img
                 src={logo}
                 alt={name}
-                className="w-[100px] h-[100px] p-1 rounded-full border-[2px]"
+                className="w-[100px] h-[100px] p-2 rounded-full border-[2px] object-contain bg-white"
               />
               <div>
                 <div className="px-2 font-bold text-xl mb-2">{name}</div>

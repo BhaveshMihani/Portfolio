@@ -10,6 +10,9 @@ import aws from "/AWS.png";
 import jquery from "/jQuery.png";
 import tailwind from "/Tailwind.png";
 import github from "/github.jpeg";
+import clerk from "/clerk.webp";
+import openrouter from "/openrouter.png";
+import n8n from "/n8n-icon.webp";
 
 const Technologies = () => {
   const cardItems = [
@@ -63,6 +66,21 @@ const Technologies = () => {
       logo: github,
       name: "GitHub",
     },
+    {
+      id: 13,
+      logo: clerk,
+      name: "Clerk",
+    },
+    {
+      id: 14,
+      logo: openrouter,
+      name: "OpenRouter",
+    },
+    {
+      id: 15,
+      logo: n8n,
+      name: "n8n",
+    },
   ];
   return (
     <div name="Technologies" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
@@ -72,14 +90,14 @@ const Technologies = () => {
           I've used the following Technologies and Framworks in my recent
           projects
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-7 my-3">
+        <div className="flex flex-wrap justify-center gap-7 my-3">
           {cardItems.map(({ id, logo, name }) => (
             <div
               key={id}
-              className="flex flex-col items-center justify-center border-[2px] rounded-full md:w-[200px] md:h-[200px] shadow-md p-1 cursor-pointer hover:scale-110 duration-300"
+              className="flex flex-col items-center justify-center border-[2px] rounded-full w-[150px] h-[150px] md:w-[180px] md:h-[180px] shadow-md p-4 cursor-pointer hover:scale-110 duration-300"
             >
-              <img src={logo} alt={name} className="w-[150px] rounded-full " />
-              <div>
+              <img src={logo} alt={name} className="w-[90px] h-[90px] md:w-[110px] md:h-[110px] object-contain" />
+              <div className="mt-2 text-sm font-medium">
                 <div>{name}</div>
               </div>
             </div>
